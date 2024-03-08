@@ -1,4 +1,7 @@
 
+using Aes256CryptoWithAwsKms.Services;
+using Amazon.KeyManagementService;
+
 namespace Aes256CryptoWithAwsKms
 {
 	public class Program
@@ -6,14 +9,13 @@ namespace Aes256CryptoWithAwsKms
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
+			var services = builder.Services;
 
-			// Add services to the container.
-
-			builder.Services.AddControllers();
-			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-			builder.Services.AddEndpointsApiExplorer();
-			builder.Services.AddSwaggerGen();
-
+			services.AddControllers();
+			services.AddEndpointsApiExplorer();
+			services.AddSwaggerGen();
+			services.AddScoped<IAesCryptoService, AesCryptoService>();
+			services.AddAWSService<IAmazonKeyManagementService>(builder.Configuration.GetAWSOptions());
 			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
