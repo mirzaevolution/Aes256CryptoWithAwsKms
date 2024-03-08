@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aes256CryptoWithAwsKms", "Aes256CryptoWithAwsKms\Aes256CryptoWithAwsKms.csproj", "{818F5ED0-2C56-4862-AAA3-B5634404B00E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818F5ED0-2C56-4862-AAA3-B5634404B00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818F5ED0-2C56-4862-AAA3-B5634404B00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818F5ED0-2C56-4862-AAA3-B5634404B00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818F5ED0-2C56-4862-AAA3-B5634404B00E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {807B7E6A-911B-4AF4-873A-31982FB56B53}
+	EndGlobalSection
+EndGlobal
